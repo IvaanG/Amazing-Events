@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Events</title>
+    <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/43acd9fab9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="./home.html">
+              <img src="./Images/unknown.png" alt="" width="200" height="50">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="./home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./PastEvents.html">Past Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./UpcomingEvents.html">Upcoming Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Contac.html">Contac</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Stats</a>
+              </li>
+             
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+      
+      
+      <div class="banner d-flex justify-content-evenly align-items-center ">
+        <div class="">
+          <a href="./Contac.html"><img class="boton-iz" src="./Images/flecha_1.png" alt=""></a>
+        </div>
+        <h1>Stats</h1>
+        <div class="">
+          <a href="./home.html"><img class="boton-de" src="./Images/flecha_2.png" alt=""></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="bg-light p-5">
+        <div class="tabla-responsive" id="no-more-tables">
+          <h3>Events statistics</h3>
+        <table class="table bg-white" >
+          <thead class="bg-dark text-light">
+            <tr>
+                <th scope="col">Events whit the highest percentage of attendance</th>
+                <th scope="col">Events whit the lowest percentage of attendance</th>
+                <th scope="col">Event with larger capacity</th>
+            </tr>
+            </thead>
+            <tbody id="tablaDinamica"> 
+
+            </tbody>
+          </table>
+          
+        <h3>Upcoming events statistics by category</h3>
+        <table class="table bg-white" >
+          <thead class="bg-dark text-light">
+            <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Revenues</th>
+                <th scope="col">Percentage of attendance</th>
+            </tr>
+            </thead>
+            <tbody id="tablaDinamicaDos">
+            
+            </tbody> 
+          </table>
+        <h3>Past Events statistics by category</h3>
+        <table class="table bg-white" >
+            <thead class="bg-dark text-light">
+                <tr>
+                <th scope="col">Category</th>
+                <th scope="col">Revenues</th>
+                <th scope="col">Percentage of attendance</th>
+                </tr>
+            </thead>
+            <tbody id="tablaDinamicaTres">
+                
+            </tbody>
+        </table>
+    </div>
+    </section>
+
+    </main>
+      
+      
+
+
+
+
+
+
+
+
+ 
+    
+
+  <footer class="bg-dark p-2 text-center d-flex justify-content-between align-items-center flex-column flex-lg-row ">
+    <div class="socials ">
+        <ul>
+            <li> <a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+            <li> <a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+            <li> <a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+            <li> <a href="#" class="whatsapp"><i class="fa fa-whatsapp"></i></a></li>
+        </ul>
+        </div>
+    <div class="container">
+        <p class="text-white">Cohort</p>
+    </div>
+  </footer>
+
+
+
+
+    <script src="stats.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- <div class="tabla-responsive" id="no-more-tables">
+  <h3>Events statistics</h3>
+<table class="table bg-white">
+  <thead class="bg-dark text-light">
+    <tr>
+        <th scope="col">Events whit the highest percentage of attendance</th>
+        <th scope="col">Events whit the lowest percentage of attendance</th>
+        <th scope="col">Event with larger capacity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-title="Events whit the highest percentage of attendance"></td>
+            <td data-title="Events whit the lowest percentage of attendance"></td>
+            <td data-title="Event with larger capacity"></td>
+        </tr>
+    </tbody>
+</table>
+<h3>Upcoming events statistics by category</h3>
+<table class="table bg-white">
+    <thead class="bg-dark text-light">
+        <tr>
+        <th scope="col">Category</th>
+        <th scope="col">Revenues</th>
+        <th scope="col">Percentage of attendance</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-title="Category"></td>
+            <td data-title="Revenues"></td>
+            <td data-title="Percentage of attendance"></td>
+        </tr>
+        <tr>
+            <td data-title="Category"></td>
+            <td data-title="Revenues"></td>
+            <td data-title="Percentage of attendance"></td>
+        </tr>
+        <tr>
+            <td data-title="Category"></td>
+            <td data-title="Revenues"></td>
+            <td data-title="Percentage of attendance"></td>
+        </tr>
+    </tbody>
+</table>
+<h3>Past Events statistics by category</h3>
+<table class="table bg-white">
+    <thead class="bg-dark text-light">
+        <tr>
+        <th scope="col">Category</th>
+        <th scope="col">Revenues</th>
+        <th scope="col">Percentage of attendance</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td data-title="Category"></td>
+            <td data-title="Revenues"></td>
+            <td data-title="Percentage of attendance"></td>
+        </tr>
+        <tr>
+            <td data-title="Category"></td>
+            <td data-title="Revenues"></td>
+            <td data-title="Percentage of attendance"></td>
+        </tr>
+        <tr>
+            <td data-title="Category"></td>
+            <td data-title="Revenues"></td>
+            <td data-title="Percentage of attendance"></td>
+        </tr>
+        <tr>
+            <td data-title="Category"></td>
+            <td data-title="Revenues"></td>
+            <td data-title="Percentage of attendance"></td>
+        </tr>
+        <tr>
+            <td data-title="Category"></td>
+            <td data-title="Revenues"></td>
+            <td data-title="Percentage of attendance"></td>
+        </tr>
+    </tbody>
+</table>
+</div> -->
